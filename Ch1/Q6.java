@@ -16,7 +16,7 @@ public class Q6 {
         }
         return comp; 
     }
-
+ 
     public static String compress(String s){
         String comp = "";
         char prev = s.charAt(0);
