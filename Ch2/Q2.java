@@ -5,14 +5,13 @@ public class Q2 {
     
     public static void main(String[] args) {
         Node head = new Node(3);
-        /*head.appendToTail(3);
+        head.appendToTail(3);
         head.appendToTail(2);
         head.appendToTail(2);
         head.appendToTail(1);
         head.appendToTail(1);
-        */
         Node.printLinkedList(head);
-        Node.printLinkedList(kToLast(head,1));
+        Node.printLinkedList(kToLast(head,2));
 
     }
 
