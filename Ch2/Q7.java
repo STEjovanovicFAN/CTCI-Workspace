@@ -12,8 +12,6 @@ public class Q7 {
         n.appendToTail(interNode);
 
         Node m = new Node(8);
-        m.appendToTail(1);
-        m.appendToTail(2);
         m.appendToTail(interNode);
 
         Node.printLinkedList(n);
@@ -26,18 +24,41 @@ public class Q7 {
         Node nCurr = n;
         Node mCurr = m;
 
-        while (nCurr != null){
-            mCurr = m;
-            while(mCurr != null){
-                if(nCurr.hashCode() == mCurr.hashCode()){
-                    return nCurr;
-                }
-                mCurr = mCurr.next;
+        int nSize = getSize(n);
+        int mSize = getSize(m);
+
+        while (nSize != mSize){
+            if(nSize > mSize){
+                nCurr = nCurr.next;
+                nSize--;
             }
-            nCurr = nCurr.next;
+            else{
+                mCurr = mCurr.next;
+                mSize--;
+            }
         }
 
+        while(nSize > 0 && mSize > 0){
+            if(nCurr.data == mCurr.data){
+                return nCurr;
+            }
+            nCurr = nCurr.next;
+            mCurr = mCurr.next;
+            nSize--;
+            mSize--;
+        }
+    
         return null;
+    }
+
+    public static int getSize(Node n){
+        Node nCurr = n;
+        int size = 0;
+        while(nCurr != null){
+            nCurr = nCurr.next;
+            size = size + 1;
+        }
+        return size;
     }
 
 }
