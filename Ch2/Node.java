@@ -19,6 +19,14 @@ public class Node {
         n.next = end;
     } 
 
+    public void appendToTail(Node d) {
+        Node n = this;
+        while (n.next != null) {
+            n = n.next;
+        }
+        n.next = d;
+    } 
+
     public static void printLinkedList(Node n){
         Node head = n;
         System.out.print("LL: ");
