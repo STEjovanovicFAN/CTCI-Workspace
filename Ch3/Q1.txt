@@ -1,0 +1,5 @@
+Seperate the array into sections and allocate those to be the size of the stack.
+
+Keep track of the bottom and top of the stack where they are in the array.
+
+If there is no space for insertion into a stack create a new array that is larger and copy the old contents into it. 
