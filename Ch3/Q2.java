@@ -50,5 +50,4 @@ public class Q2 {
         System.out.println(stack.min());
     }
 
-    
 }
