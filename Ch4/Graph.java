@@ -5,7 +5,7 @@ public class Graph {
 
         public static void addEdge(ArrayList<ArrayList<Integer>> adj, int u, int v) {
             adj.get(u).add(v);
-            adj.get(v).add(u);
+            //adj.get(v).add(u);
         }
 
         public static void printGraph(ArrayList<ArrayList<Integer>> adj) {
