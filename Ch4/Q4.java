@@ -14,7 +14,6 @@ class Q4{
     }
 
     public static boolean isBalanced(Node n){
-
         if(n == null){
             return true;
         }
