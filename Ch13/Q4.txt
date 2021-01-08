@@ -1,0 +1,1 @@
+Generics allow you to create a method that is customized for the type that invoked it.
