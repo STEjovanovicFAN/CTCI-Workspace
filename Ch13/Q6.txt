@@ -1,0 +1,2 @@
+Object reflection allows you to code code that lets you inspect other code at the same time.
+Useful for creating modules and unit testing.
