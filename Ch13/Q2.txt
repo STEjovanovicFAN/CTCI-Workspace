@@ -1,0 +1,1 @@
+Yes, the finally block will execute even if we insert a return argument inside a try catch block.
