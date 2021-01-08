@@ -1,0 +1,6 @@
+Final applied on a variable means it cannot be changed.
+Final on a class means it cannot be subclassed.
+
+Finally after a try catch block will always execute after the try catch has been completed.
+
+Finalize performs clean up before it's automatically garbage collected in java.
