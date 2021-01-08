@@ -1,0 +1,1 @@
+Benefits of keeping a constructor private is to explicitly create a constructor in the child class.

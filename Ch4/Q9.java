@@ -1,7 +1,7 @@
 package Ch4;
 import java.util.*;
 
-public class Q8 {
+public class Q9 {
 
     public static void BTSSequence(Node n){
         Queue queue = new LinkedList<Node>();
